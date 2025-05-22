@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI-Enhanced Education Platform
 
-## Getting Started
+פלטפורמה חינוכית המשלבת בינה מלאכותית לקידום למידה בקבוצות קטנות.
 
-First, run the development server:
+## תכונות עיקריות
 
+- חלוקה אוטומטית לקבוצות למידה קטנות (3-5 תלמידים)
+- עוזר AI חכם המותאם לנושא הלימוד
+- ממשק משתמש ידידותי בעברית
+- מעקב אחר התקדמות התלמידים
+- תמיכה במגוון נושאי לימוד
+
+## דרישות מערכת
+
+- Node.js 18.0.0 ומעלה
+- npm או yarn
+- מפתח API של OpenAI
+
+## התקנה
+
+1. שכפל את המאגר:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [repository-url]
+cd education-ai-platform
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. התקן את התלויות:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. צור קובץ `.env.local` בתיקיית הפרויקט והוסף את מפתח ה-API של OpenAI:
+```
+OPENAI_API_KEY=your_api_key_here
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. הפעל את שרת הפיתוח:
+```bash
+npm run dev
+```
 
-## Learn More
+הפרויקט יהיה זמין בכתובת [http://localhost:3000](http://localhost:3000).
 
-To learn more about Next.js, take a look at the following resources:
+## שימוש
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. היכנס למערכת כמורה
+2. צור כיתה חדשה והגדר את נושא השיעור
+3. המערכת תחלק את התלמידים לקבוצות קטנות
+4. כל קבוצה תקבל גישה לעוזר AI המותאם לנושא הלימוד
+5. עקוב אחר התקדמות הקבוצות בזמן אמת
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## טכנולוגיות
 
-## Deploy on Vercel
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- OpenAI API
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## רישיון
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
